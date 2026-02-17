@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML moderno - introduccion </title>
+</head>
+<body>
+<!-- Usar figcaption cuando la imagen necesita contexto-->
+  <figure>
+      <img src="https://images.unsplash.com/photo-1770110000509-6c8298224699?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen de prueba" width="100%">
+      <figcaption>
+        figura 1: fotografia de prueba
+      </figcaption>
+  </figure>
+
+  <!-- utiliza principalmente para imagenes responsivas. -->
+  <picture>
+        <source srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200" media="(min-width: 768px)">
+        <source srcset="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600" media="(max-width: 767px)">
+
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600" alt="Imagen de prueba con source">
+
+  </picture>
+  
+
+  <svg>
+    <circle cx="60" cy="60" r="50" stroke="black"stroke-width="9" fill="lightblue"> </circle>
+  </svg>
+
+  <!-- datalist: listra una lista de sugerencias, te da ciertos valoters qu puedes ponefr -->
+   <label> 
+    lenguaje fav
+    <input list="languages">
+   </label>
+
+   <datalist id="languages">
+    <option value="Java"> </option>
+    <option value="Javascript"> </option>
+   <option value="Python"> </option>
+     <option value="C#"> </option>
+   </datalist>
+
+   <!--  contenido desplegable -->
+   <details>
+    <summary> Que es HTML semantico? </summary>
+    <p>
+      Es el uso de etiquetas que describen el significado del contenido y no solo lo que aparece
+    </p>
+   </details>
+
+   <!-- sirve para cargar videos -->
+   <video autoplay muted loop poster="">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+   </video>
+
+   <!-- subtitulos -->
+
+   <track kind="subtitles"> </trackkind>
+
+   <audio src= "https://www.w3schools.com/html/horse.mp3" controls>  </audio>
+
+   <iframe width= "560" height="315" src="" frameborder> </iframe>
+
+
+
+   <button conClick="abrirModal()"> abrir msj </button>
+   
+   <!-- depende de JSS-->
+   <dialog id="miDialogo">
+    <p> este es un dualogo html nativo </p>
+    <button conClick="abrirModal()"> abrir msj </button>
+   </dialog>
+
+   
+
+   <script>
+    function abrirModal(){
+      document.getElementById('miDialogo').showModal();
+
+    }
+     function cerrarModal(){
+      ocument.getElementById('miDialogo').close();
+      
+    }   
+
+   </script>
+
+
+
+
+  
+</body>
+</html>

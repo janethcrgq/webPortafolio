@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<style>
+
+    body{
+    background-color: #E5F9FF;
+  }
+
+  #formularioTitulo{
+    background-color:#C8C9C7;
+  }
+  #formulario{
+    background-color: white;
+    width: 500px;
+    margin: 30px;
+    padding: 10px;
+    margin: 30px auto;
+  }
+
+  header{
+    background-color: white;
+    border: 2px solid grey;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+  }
+  #redes{
+     background-color: white;
+  }
+
+  button{
+    margin: 10px;
+  }
+
+
+</style>
+
+
+
+
+
+
+
+
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=evice-width, initial-scale=1.0">
+      <meta name="description" content="Portafolio profesional de Ingeniero en software">
+      <meta name="keywords" content="Portafolio, Ingeniero en Software, TI, Desarrolllo Web">
+      <meta name="author" content="Janeth Cristina Galván Quinonez">
+      <meta name="robots" content=" index, follow">
+      <title> Portafolio Profesional Janeth Galván</title>
+      <link rel="icon" type="image/png"  href="images/IngMartinBerrnal.png">
+
+
+  </head>
+
+  <body>
+
+    <header>
+        <h1> ⋆⋆⋆⋆⋆⋆ Janeth Cristina Galván Quiñonez ⋆⋆⋆⋆⋆⋆</h1>
+        <p> ══════════════ Estudiante de Ingeniería en Software ═════════════════════ </p>
+
+        <nav>
+          <a href=" /index.html"> Home </a> |
+          <a href=" /about.html"> Sobre Mi </a> |
+          <a href=" /work.html"> Proyectos </a> |
+          <a href=" /writting.html"> Publicaciones </a> |
+          <a href=" /contact.html"> Contactos </a> |
+          <a href="#about"> </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+      <section id="formulario">
+        <h2 id="formularioTitulo"> formulario de contacto </h2>
+        <form action="https://mibackend.com/contacto" method="post"> 
+          <label for="nombre"> Nombre completo </label>
+          <input type="text" id="nombre" placeholder="Ej. Janeth Galvan">
+          <br>
+          <label for="email"> correo electronico </label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required pattern="^[^@\s]+@[^@\s]+\[^@\s]+$">
+          <br>
+          <label for="telefono"> telefono </label>
+          <input type="tel" id="telefono" name="telefono" placeholder="10 digitos" pattern="[0-9][10]">
+         <br>
+          <label for="edad"> edad </label>
+          <input type="number" id="edad" placeholder="edad">
+          <br>
+          <label for="fecha"> fecha </label>
+          <input type="date" id="fecha">
+          <br>
+          <label for="motivo"> motivo de contacto </label>
+          <select name="motivo" id="motivo">
+            <option value= ""> seleccione una opcion </option>
+            <option value="trabajo"> trabajo </option> 
+            <option value="clases"> clases </option> 
+            <option value="asesorias"> asesorias </option> 
+          </select>
+          <br>
+          <label> como te gustaria que te contacte? </label>
+          <br>
+          <input type="Radio" id="contacto-correo" name="contacto-correo" value="correo">
+          <label for="contacto-correo"> correo </label>
+          <br>
+          <input type="Radio" id="contacto-wha" name="contacto-wha" value="whatsapp">
+          <label for="contacto-wha"> whatsapp </label>
+          <br>
+          <button type="submit"> guardar</button>
+          <button type="reset"> Limpiar </button>
+        </form>
+      </section>
+    </main>
+    
+
+
+    <footer>
+      <section>
+        <br>
+         <mark> <em id="redes"> Sigueme en mis redes </em> </mark>
+          <p> <a href="https://www.instagram.com/janeeethgalvan" target= "blank" rel="noopener noreferrer"> Instagram </a> </p>
+          <p> <a href="https://www.twitter.com/janethcrgq"> Twitter </a></p>
+      </section>
+      <p>&copy; 2026. Janeth Cristina Galvan Quinonez. Todos los derechos reservados </p>
+    </footer>
+
+
+  </body>
+</html>
