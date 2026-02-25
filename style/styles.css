@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
+nav{
+  background-color: lightblue;
+  padding: 20px 0;
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.links{
+display: flex;
+  gap: 40px;
+}
+
+.links a{
+  color: grey;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 600;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex: 1;
+}
+
+.foto{
+  display: flex;
+  flex: 1;
+  margin: 0;
+}
+
+.columnaDerecha{
+  flex: 1;
+  display: flex;
+  background-color: #cccccc;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+
+.foto img{
+  width: 100%;
+}
+
+.textoNombre{
+  width: fit-content;
+  color: white;
+
+ 
+}
+
+.textoFrase{
+  width: fit-content;
+  color: grey;
+  padding: 12px;
+}
+
+.btn{
+  width: 200px;
+  padding: 12px;
+  border-radius: 10px; 
+  border: none;
+  margin-top: 15px;
+ cursor: pointer;
+ font-weight: 600;
+ transition: all 0.3s ease;
+ background-color: #FAE969;
+ color: black;
+}
+
+
+.informacion{
+  padding: 35px;
+  width: 80%;
+  height: 40%;
+  background-color: lightblue;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+  #habilidades, #caminoProfesional{
+    background-color: lightblue;
+    padding: 30px;
+    width: fit-content;
+    height: 300px;
+    margin: 30px auto;
+  }
+
+    #habilidadesText, #caminoProfText{
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  #table{
+    background-color: white;
+    margin: 30px auto;
+  }
+  #experienciaText{
+    text-align: center;
+  }
+
+
+    #intereses, #universidad{
+    background-color: lightblue;
+    width: fit-content;
+    padding: 30px;
+    height: 200px;
+    margin: 30px auto;
+  }
+
+
+  #formulario{
+    background-color: lightblue;
+    width: 500px;
+    margin: 30px;
+    padding: 10px;
+    margin: 30px auto;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  main{
+    flex: 1;
+  }
+
+  .seccionRedes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: lightblue;
+  }
+
+  .redes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+  #tituloRedes{
+    color: grey;
+  }
+
+
+

@@ -3,21 +3,7 @@
 
 <style>
 
-   body{
-    background-color: #E5F9FF;
-  }
 
-
-  header{
-    background-color: white;
-    border: 2px solid grey;
-    padding: 30px;
-    margin: 30px;
-    text-align: center;
-  }
-  #redes{
-     background-color: white;
-  }
 
   #table{
     background-color: white;
@@ -39,6 +25,7 @@
       <meta name="robots" content=" index, follow">
       <title> Portafolio Profesional Janeth Galván</title>
       <link rel="icon" type="image/png"  href="images/IngMartinBerrnal.png">
+      <link rel="stylesheet" type="text/css" href="../style/styles.css"/>
 
 
   </head>
@@ -46,17 +33,15 @@
   <body>
 
     <header>
-        <h1> ⋆⋆⋆⋆⋆⋆ Janeth Cristina Galván Quiñonez ⋆⋆⋆⋆⋆⋆</h1>
-        <p> ══════════════ Estudiante de Ingeniería en Software ═════════════════════ </p>
-
         <nav>
-          <a href=" /index.html"> Home </a> |
-          <a href=" /about.html"> Sobre Mi </a> |
-          <a href=" /work.html"> Proyectos </a> |
-          <a href=" /writting.html"> Publicaciones </a> |
-          <a href=" /contact.html"> Contactos </a> |
-          <a href="#about"> </a>
-
+          <div class="links"> 
+            <a href="index.html"> Home </a> |
+            <a href="about.html"> Sobre Mi </a> |
+            <a href="work.html"> Proyectos </a> |
+            <a href="writting.html"> Publicaciones </a> |
+            <a href="contact.html"> Contactos </a> |
+            <a href="#about"> </a>
+          </div>
         </nav>
     </header>
 
@@ -101,11 +86,12 @@
     
 
 
+
     <footer>
-      <section>
-         <mark> <em> Sigueme en mis redes </em> </mark>
-          <p> <a href="https://www.instagram.com/janeeethgalvan" target= "blank" rel="noopener noreferrer"> Instagram </a> </p>
-          <p> <a href="https://www.twitter.com/janethcrgq"> Twitter </a></p>
+      <section class="seccionRedes">
+         <h3 id="tituloRedes"> Sigueme en mis redes </h3> 
+          <p class="redes"> <a href="https://www.instagram.com/janeeethgalvan" target= "blank" rel="noopener noreferrer"> Instagram </a> </p>
+          <p class="redes"> <a href="https://www.twitter.com/janethcrgq"> Twitter </a></p>
       </section>
       <p>&copy; 2026. Janeth Cristina Galvan Quinonez. Todos los derechos reservados </p>
     </footer>
