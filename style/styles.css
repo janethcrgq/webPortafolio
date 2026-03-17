@@ -1,166 +1,1113 @@
-@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&display=swap');
 
-nav{
-  background-color: lightblue;
-  padding: 20px 0;
-  top: 0;
-  position: sticky;
-  display: flex;
-  justify-content: center;
-}
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.links{
-display: flex;
-  gap: 40px;
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+  display: flex;
+}
+
+
+nav{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  padding: 30px;
 }
 
 .links a{
-  color: grey;
-  font-family: "Alan Sans", sans-serif;
-  font-weight: 600;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+#menu-toggle{
+  display: none;
+}
+
+.menu-icon{
+  display: none;
 }
 
 .contenedor{
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
   flex: 1;
+  background: linear-gradient(to bottom, #1A22F0, #FFFFFF);
 }
 
 .foto{
-  display: flex;
   flex: 1;
-  margin: 0;
-}
-
-.columnaDerecha{
-  flex: 1;
-  display: flex;
-  background-color: #cccccc;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
- 
 }
 
 .foto img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to right, black 50%, transparent 100%);
+  mask-image: linear-gradient(to right, black 50%, transparent 100%);
 }
 
-.textoNombre{
-  width: fit-content;
-  color: white;
-
- 
-}
-
-.textoFrase{
-  width: fit-content;
-  color: grey;
-  padding: 12px;
-}
-
-.btn{
-  width: 200px;
-  padding: 12px;
-  border-radius: 10px; 
-  border: none;
-  margin-top: 15px;
- cursor: pointer;
- font-weight: 600;
- transition: all 0.3s ease;
- background-color: #FAE969;
- color: black;
-}
-
-
-.informacion{
-  padding: 35px;
-  width: 80%;
-  height: 40%;
-  background-color: lightblue;
-   display: flex;
+.columnaDerecha{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  flex: 1;
 }
 
-  #habilidades, #caminoProfesional{
-    background-color: lightblue;
-    padding: 30px;
-    width: fit-content;
-    height: 300px;
-    margin: 30px auto;
+.textoRenglon1, .textoRenglon2{
+  color: white;
+  font-size: 140px;
+  line-height: 0.9;
+  display: flex;
+
+  
+}
+
+.bloqueAzul{
+  background-color: white;
+  color: #002CDB;
+  padding: 0px 10px;
+}
+
+.textoRenglon1{
+  align-items: center;
+  
+}
+
+
+
+
+.etiqueta{
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  transform: rotate(-4deg);
+  font-size: 25px;
+  border: 1px solid white;
+  padding: 10px;
+  
+  
+
+}
+
+.textoFrase{
+  color: white;
+  padding: 15px;
+  font-family: 'Syne', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+
+}
+
+.frase{
+  border: 1px solid white;
+  border-radius: 8px;
+  margin: 50px;
+  width: 400px;
+  height: 120px
+  
+}
+
+.topFrase{
+  display: flex;
+  gap: 5px;
+  background-color: #A0B4FA;
+  align-items: center;
+  padding: 10px;
+}
+
+.topFrase p{
+  color: grey;
+}
+
+.puntoRojo, .puntoVerde, .puntoAmarillo{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.puntoRojo{
+  background-color: red;;
+}
+
+.puntoVerde{
+  background-color: green;
+}
+
+.puntoAmarillo{
+  background-color: yellow;
+}
+
+
+
+
+
+.about{
+  background-color: #F5F0E8;
+
+}
+
+#ladoIzquierdo{
+  flex: 1;
+  padding: 50px;
+  border-right: 1px solid #9b9898;
+  padding-left: 30px;
+  
+}
+
+#ladoDerecho{
+  flex: 1;
+}
+
+#sobreMi{
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 650px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+#topVentana{
+  border: 1px solid black;
+  background-color: #002CDB;
+  display: flex;
+  padding: 12px;
+}
+
+#topVentana p{
+  color: white;
+}
+
+#contenidoVentana{
+  background-color: #dfe6ff;
+  width: 100%;
+  flex: 1;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 10px;
+  padding-top: 10px;
+  
+}
+
+#contenidoVentana h1{
+  color: #2749d3;
+}
+
+#contenidoVentana p{
+  padding-top: 9px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+#hardSkills p{
+  border: 1px solid #002CDB;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2347d8;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 19px;
+  margin-bottom: 40px;
+  
+}
+
+#hardSkills h3, #softSkills h3{
+  font-family: 'Courier New', Courier, monospace;
+  color: #1d40ce;
+  margin-bottom: 40px;
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+#cuadroSoft{
+  border: 1px solid black;
+  background-color: #1e1e2e;
+  width: 350px;
+  height: 150px;
+  border-radius: 12px;
+  padding-top: 20px;
+}
+
+#softSkills p{
+  color: #00ff00;
+  font-size: 18px;
+
+}
+
+.dolar{
+  color: rgb(188, 187, 187);
+}
+
+#cuadroSoft p{
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+
+#profesionalText{
+  color: #002CDB;
+  margin-bottom: 50px;
+}
+
+#caminoText, #profesionalText{
+  font-size: 70px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 50px;
+
+  
+}
+
+#miCaminoLog{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 45px;
+  color: grey;
+  margin-bottom: 30px;
+
+}
+
+.conjuntoActividad{
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 100px;
+  flex-direction: column;
+  padding: 25px;
+  width: 500px;
+}
+
+
+
+.actividad p{
+  color: #002CDB;
+}
+
+.actividades{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+}
+
+.circuloNumero{
+  margin-left: 80px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-color: #2347d8;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+
+.actividad{
+  display: flex;
+}
+
+.intereses h5{
+  
+  color: #002CDB;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.intereses{
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.intereses p{
+  font-size: 20px;
+}
+
+.tituloProyectos span{
+  color: #002CDB;
+  display: block;
+
+}
+
+.tituloProyectos{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 40px;
+
+}
+
+.ladoIzq img{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+
+}
+
+.ladoIzq, .ladoDerec{
+  display: flex;
+  flex: 1;
+
+}
+
+.ladoIzq{
+    flex-direction: column;
+    border-right: 2px solid black;
+    margin-left: 40px;
+}
+
+.work{
+  background-color: #F5F0E8;
+}
+
+.proyectosEncontrados{
+  background-color:#1e1e2e;
+  color:#00ff00;
+  width: 280px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.textoMovil{
+  display: none;
+}
+
+.ladoDerec{
+  display:flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+
+}
+
+.cardProyecto{
+  margin-left: 80px;
+  border: 1px solid black;
+  width: 550px;
+  height: 200px;
+  background-color: white;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  border-left: 4px solid #002CDB;
+
+
+}
+
+.proyecto h2{
+  font-size: 30px;
+
+}
+
+.descripcionProyecto{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.lenguaje{
+  background-color:#1e1e2e;
+  color:#00ff00;
+  display: inline-block;
+  gap: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+
+
+}
+
+.lenguajes span{
+  padding: 10px;
+}
+
+.proyecto{
+  margin-bottom: 5px;
+}
+
+.etiquetaProyecto{
+  background-color: #dce3fc;
+  color:#002CDB;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 5px;
+
+}
+
+.etiquetaProyecto{
+  font-size: 12px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.lenguajesEstado{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.puntoEstado{
+  width: 12px;
+  height: 12px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  background-color: rgb(255, 255, 62);
+}
+
+.estado{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.actividades{
+  background-color: #F5F0E8;
+  background-image: linear-gradient(rgba(26,34,240,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(26,34,240,0.07) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.titulo{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.titulo span{
+  color:#002CDB;
+}
+
+.evento{
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+
+.infoEvento h2{
+  font-size: 25px;
+}
+
+.infoEvento p{
+  font-size: 18px;
+}
+
+.fecha{
+  color:#9b9898;
+  font-size: 15px;
+
+}
+
+
+
+.infoEvento{
+  padding-left: 50px;
+  padding-top: 45px;
+}
+
+.eventos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px 50px;
+  position: relative;
+}
+
+.fotoSociedad, .fotoHermosillo, .fotoGdl, .fotoHackaton{
+  width: 200px;
+  height: 180px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+.barraTitulo{
+  background-color:#002CDB;
+}
+
+.barraTitulo{
+  display: flex;
+  padding: 10px;
+  color: white;
+  justify-content: space-between;
+}
+
+.botones span{
+
+  display: inline-block;
+  overflow: hidden;
+  font-size: 18px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  background-color: #d3d6e2;
+  color: black;
+
+
+}
+
+.ventana{
+  border: 3px solid grey;
+  background-color: white;
+  width: 600px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: absolute;
+ 
+}
+
+.contenidoVentana{
+   display: flex;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.ventana1{
+  top: 80px;
+  left: 150px;
+}
+
+.ventana2{
+  top: 20px;
+  left: 710px;
+}
+
+.ventana3{
+  top: 380px;
+  left: 150px;
+}
+
+.ventana4{
+  top: 420px;
+  left: 700px;
+}
+
+.contact{
+  display: flex;
+  background-color: #F5F0E8;
+  background-image: linear-gradient(rgba(26,34,240,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(26,34,240,0.07) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.hablemosJuntos{
+  flex: 1;
+  margin-top: 100px;
+  margin-left: 50px;
+
+}
+
+.hablemosJuntos p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px
+}
+
+.hablemosJuntos h1{
+  font-size: 120px;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+
+
+.formulario{
+  flex: 1;
+  max-width: 100%;
+  max-height: 720px;
+  margin-right: 50px;
+  margin-top: 80px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.juntosTextAzul{
+  color:#002CDB;
+}
+
+.topFormContacto{
+  padding: 15px;
+  background-color: #002CDB;
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+}
+
+.topFormContacto p{
+  color: rgb(176, 176, 176);
+}
+
+.formRow{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  gap: 12px;
+}
+
+.form input{
+  width: 100%;
+  height: 38px;
+  border-radius: 10px;
+  padding-left: 12px;
+}
+
+.input{
+  display: flex;
+  margin-left: 12px;
+}
+
+.form label{
+  font-size: 15px;
+  color: grey;
+}
+.form select{
+  padding-left: 12px;
+   max-width: 270px;
+   height: 38px;
+   border-radius: 10px;
+
+}
+
+.form input, .form select, .form textarea, .buttonGroup button{
+  font-family:'Courier New', Courier, monospace;
+}
+
+.radioGroup{
+  display: flex;
+  gap: 10px;
+}
+
+.radio{
+  width: 25px !important;
+  height: 25px !important;
+}
+ #mensaje{
+  margin: 0 auto; 
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.buttonGroup{
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+
+
+.botonEnviar, .botonLimpiar{
+  background-color: #002CDB;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.botonEnviar{
+  display: flex;
+  flex: 1;
+}
+
+.botonLimpiar{
+  width: 200px;
+}
+
+
+
+@media(max-width: 768px){
+
+
+  .links{
+    display: flex;
+    
+    gap: 8px;
   }
 
-    #habilidadesText, #caminoProfText{
-    text-align: center;
-    padding: 20px;
+  .links a{
+    font-size: 10px;
+    padding: 2px 8px;
   }
 
-
-  #table{
-    background-color: white;
-    margin: 30px auto;
-  }
-  #experienciaText{
-    text-align: center;
-  }
-
-
-    #intereses, #universidad{
-    background-color: lightblue;
-    width: fit-content;
-    padding: 30px;
-    height: 200px;
-    margin: 30px auto;
-  }
-
-
-  #formulario{
-    background-color: lightblue;
-    width: 500px;
-    margin: 30px;
+  nav{
     padding: 10px;
-    margin: 30px auto;
   }
 
-  body{
+  /*
+    SECCION DE ABOUT ME
+  */
+
+
+
+  .about{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
   }
-
-  main{
-    flex: 1;
-  }
-
-  .seccionRedes{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  #sobreMi{
     width: 100%;
-    background-color: lightblue;
+    height: 5%;
+
+  }
+  #contenidoVentana{
+    font-size: 12px;
+  }
+  #contenidoVentana p{
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  #topVentana{
+    padding: 5px;
+    font-size: 10px;
+  }
+  #hardSkills h3, #softSkills h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  #hardSkills p{
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+  #miCaminoLog{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 0;
+  }
+  #caminoText, #profesionalText{
+    font-size: 30px;
+  }
+  #profesionalText{
+    margin-bottom: 30px;
+  }
+  .circuloNumero{
+    width: 40px;
+    height: 40px;
+    margin-left: 10%;
+    font-size: 12px;
+  }
+  .conjuntoActividad{
+    padding: 10px;
+    margin-left: 30px;
+    width: 60%;
+  }
+  .conjuntoActividad h4{
+    font-size: 15px;
+  }
+  .conjuntoActividad p{
+    font-size: 10px;
+  }
+  .actividad{
+    gap: 10px;
+  }
+  .intereses{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .intereses h5{
+    font-size: 30px;
+  }
+  .intereses p{
+    font-size: 14px;
+  }
+  
+
+  
+
+  /* 
+      SECCION DE PROYECTOS 
+  */
+
+
+  .work{
+    flex-direction: column;
   }
 
-  .redes{
+  .ladoIzq{
+    flex-direction: row;
+    border-right: none;
+    margin-left: 0;
     display: flex;
-    text-align: center;
-    justify-content: center;
+  }
+
+  .ladoIzq img{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding-top: 3%;
+  }
+
+  .tituloProyectos{
+    font-size: 4vw;
+    padding-top: 2%;
+    padding-left: 28px;
+  } 
+
+  .ladoDerec{
+    padding-top: 2px;
+    gap: 20px;
+  }
+
+  .cardProyecto{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    padding: 8px;
+  }
+
+  .proyecto h2{
+    font-size: 22px;
+  }
+
+  .descripcionProyecto{
+    font-size: 16px;
+  }
+
+  .fotoFrase{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
     
   }
 
-  #tituloRedes{
-    color: grey;
+  .proyectosEncontrados{
+    width: 65%;
+    height: 20%;
+    font-size: 9px;
+    margin-top: 2%;
+    margin-left: 0;
+    
   }
+
+  .textoDesktop{
+    display: none;
+  }
+  .textoMovil{
+    display: block;
+    font-size: 10px;
+  }
+
+  .lenguaje{
+    font-size: 11px;
+  }
+
+  .estado p{
+    font-size: 14px;
+  }
+
+  .menu-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu-icon span{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+  .links{
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .links{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*
+    SECCION DE ACTIVIDADES
+  */
+
+  .eventos{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    gap: 16px;
+    padding: 20px;
+    min-height: auto;
+  }
+  .ventana{
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+     position:relative;
+  }
+  .ventana1, .ventana2, .ventana3, .ventana4{
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+  .fotoHackaton, .fotoSociedad, .fotoHermosillo, .fotoGdl{
+    width: 120px;
+    height: 80px;
+  }
+  .infoEvento h2{
+    font-size: 20px;
+  }
+  .infoEvento p{
+    font-size: 10px;
+  }
+  .infoEvento li{
+    font-size: 10px;
+  }
+  .infoEvento{
+    padding-top: 15px;
+    padding-left: 30px;
+  }
+  .contenidoVentana{
+    align-items: center;
+  }
+  .titulo{
+    font-size: 20px;
+    padding-top: 25;
+
+  }
+
+  /*
+    SECCION DE CONTACTO
+  */
+
+  .contact{
+    flex-direction: column;
+    padding-bottom: 30px;
+
+    
+  }
+  .hablemosJuntos{
+    background: linear-gradient(to bottom, #1A22F0, #FFFFFF);
+    margin-top: 0;
+    margin-left: 0;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .hablemosJuntos h1{
+    padding: 5px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+  .hablemosJuntos p{
+    font-size: 12px;
+    color: black;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .juntosTextAzul{
+    color: white;
+  }
+  .formulario{
+    width: 90%;
+    margin: 0 auto;
+    max-height: 80%;
+    
+  }
+  .form{
+    padding: 10px;
+    gap: 8px;
+  }
+  .form label{
+    font-size: 12px;
+  }
+  .form input{
+    background-color: rgb(240, 240, 240);
+    font-size: 10px;
+    border: 1px solid rgb(200, 199, 199);
+  }
+  .radioGroup label{
+    font-size: 12px;
+    
+  }
+  .radio{
+    width: 18px !important;
+    height: 18px !important;
+  }
+  #mensaje{
+    height: 120px;
+    background-color: rgb(240, 240, 240);
+  }
+  .buttonGroup{
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

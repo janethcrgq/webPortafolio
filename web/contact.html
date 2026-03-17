@@ -22,70 +22,102 @@
 
     <header>
         <nav>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon"> 
+            <span> </span>
+            <span> </span>
+            <span> </span>
+          </label>
           <div class="links"> 
-            <a href="index.html"> Home </a> |
-            <a href="about.html"> Sobre Mi </a> |
-            <a href="work.html"> Proyectos </a> |
-            <a href="writting.html"> Publicaciones </a> |
-            <a href="contact.html"> Contactos </a> |
-            <a href="#about"> </a>
+            <a  href="index.html"> HOME </a> |
+            <a href="about.html"> SOBRE MI </a> |
+            <a href="work.html"> PROYECTOS </a> |
+            <a href="writting.html"> PUBLICACIONES </a> |
+            <a href="contact.html"> CONTACTO </a> |
           </div>
         </nav>
     </header>
 
 
-    <main>
-      <section id="formulario">
-        <h2 id="formularioTitulo"> formulario de contacto </h2>
-        <form action="https://mibackend.com/contacto" method="post"> 
-          <label for="nombre"> Nombre completo </label>
-          <input type="text" id="nombre" placeholder="Ej. Janeth Galvan">
-          <br>
-          <label for="email"> correo electronico </label>
-          <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required pattern="^[^@\s]+@[^@\s]+\[^@\s]+$">
-          <br>
-          <label for="telefono"> telefono </label>
-          <input type="tel" id="telefono" name="telefono" placeholder="10 digitos" pattern="[0-9][10]">
-         <br>
-          <label for="edad"> edad </label>
-          <input type="number" id="edad" placeholder="edad">
-          <br>
-          <label for="fecha"> fecha </label>
-          <input type="date" id="fecha">
-          <br>
-          <label for="motivo"> motivo de contacto </label>
-          <select name="motivo" id="motivo">
-            <option value= ""> seleccione una opcion </option>
-            <option value="trabajo"> trabajo </option> 
-            <option value="clases"> clases </option> 
-            <option value="asesorias"> asesorias </option> 
-          </select>
-          <br>
-          <label> como te gustaria que te contacte? </label>
-          <br>
-          <input type="Radio" id="contacto-correo" name="contacto-correo" value="correo">
-          <label for="contacto-correo"> correo </label>
-          <br>
-          <input type="Radio" id="contacto-wha" name="contacto-wha" value="whatsapp">
-          <label for="contacto-wha"> whatsapp </label>
-          <br>
-          <button type="submit"> guardar</button>
-          <button type="reset"> Limpiar </button>
+    <main class="contact">
+
+      <div class="hablemosJuntos">
+        <h1> Hablemos <br> <span class="juntosTextAzul"> juntos_ </span></h1>
+        <p> Estoy disponible para proyectos, <br> colaboraciones o cualquier pregunta. <br> Escribeme 
+            y con gusto te respondo</p>
+      </div>
+
+
+      <div class="formulario">
+        <div class="topFormContacto">
+            <span class="puntoRojo"> </span>
+            <span class="puntoAmarillo"></span>
+            <span class="puntoVerde"> </span>
+            <p> CONTACTO.EXE</p>         
+        </div>
+
+        <form action="https://formspree.io/f/xjgapvzw" method="post"> 
+
+
+          <div class="formRow"> 
+            <div class="form">
+            <label for="nombre"> NOMBRE </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Janeth Galvan">
+            </div>
+          
+            <div class="form"> 
+            <label for="email"> CORREO </label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required pattern="^[^@\s]+@[^@\s]+\[^@\s]+$">
+            </div>
+          </div>
+         
+
+          <div class="formRow"> 
+            <div class="form"> 
+            <label for="telefono"> TELÉFONO </label>
+            <input type="tel" id="telefono" name="telefono" placeholder="10 digitos" pattern="[0-9]{10}">
+            </div>
+         
+      
+            <div class="form"> 
+            <label for="motivo"> MOTIVO </label>
+            <select name="motivo" id="motivo">
+              <option value= ""> seleccione una opcion </option>
+              <option value="trabajo"> trabajo </option> 
+              <option value="clases"> clases </option> 
+              <option value="asesorias"> asesorias </option> 
+            </select>
+            </div>
+          </div>
+          
+
+          <div class="form"> 
+          <label> CÓMO CONTACTARTE? </label>
+            <div class="radioGroup">
+            <input type="Radio" class="radio" id="contacto-correo" name="contacto" value="correo">
+            <label for="contacto-correo"> CORREO </label>
+            
+            <input type="Radio" class="radio"  id="contacto-wha" name="contacto" value="whatsapp">
+            <label for="contacto-wha"> WHATSAPP </label>              
+            </div>
+    
+          </div>
+
+          <div class="form"> 
+          <label for="mensaje"> MENSAJE </label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntame en qué puedo ayudarte"></textarea>
+          </div>
+          
+          <div class="buttonGroup"> 
+          <button class="botonEnviar" type="submit"> ENVIAR </button>
+          <button class="botonLimpiar" type="reset"> LIMPIAR </button>
+          </div>
         </form>
-      </section>
+      </div>
     </main>
     
 
 
-
-    <footer>
-      <section class="seccionRedes">
-         <h3 id="tituloRedes"> Sigueme en mis redes </h3> 
-          <p class="redes"> <a href="https://www.instagram.com/janeeethgalvan" target= "blank" rel="noopener noreferrer"> Instagram </a> </p>
-          <p class="redes"> <a href="https://www.twitter.com/janethcrgq"> Twitter </a></p>
-      </section>
-      <p>&copy; 2026. Janeth Cristina Galvan Quinonez. Todos los derechos reservados </p>
-    </footer>
 
 
   </body>
