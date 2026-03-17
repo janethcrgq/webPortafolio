@@ -1070,6 +1070,42 @@ nav{
     padding: 10px;
   }
 
+  #introduccion{
+    display: flex;
+    flex-direction: column;
+  }
+  .foto img{
+    border-radius: 50%;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+  .foto{
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+  }
+
+  .informacion h1{
+    font-size: 90px;;
+  }
+  .informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .frase{
+    width: 70%;
+    height: auto;
+    margin: 40px;
+  }
+
+
+
+
 
 
 
