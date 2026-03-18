@@ -758,18 +758,27 @@ nav{
 
   .links{
     display: flex;
+    align-items: center;
+    gap: 4px;
     
-    gap: 8px;
   }
 
   .links a{
-    font-size: 10px;
-    padding: 2px 8px;
+    font-size: 8px;
+    padding: 15px 10px;
   }
 
   nav{
-    padding: 10px;
+    padding: 5px;
   }
+
+
+
+
+  #menu-toggle:checked ~ .links{
+    display: flex;
+    flex-direction: column;
+  } 
 
   /*
     SECCION DE ABOUT ME
@@ -865,6 +874,9 @@ nav{
     border-right: none;
     margin-left: 0;
     display: flex;
+    flex: none;
+    margin-bottom: 30px;
+
   }
 
   .ladoIzq img{
@@ -876,7 +888,6 @@ nav{
 
   .tituloProyectos{
     font-size: 4vw;
-    padding-top: 2%;
     padding-left: 28px;
   } 
 
@@ -933,27 +944,6 @@ nav{
     font-size: 14px;
   }
 
-  .menu-icon{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-  }
-
-  .menu-icon span{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-  }
-
-  .links{
-    display: none;
-  }
-
-  #menu-toggle:checked ~ .links{
-    display: flex;
-    flex-direction: column;
-  }
 
   /*
     SECCION DE ACTIVIDADES
