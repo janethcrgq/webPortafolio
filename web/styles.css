@@ -771,6 +771,9 @@ nav{
   nav{
     padding: 5px;
   }
+  .contenedor{
+    background: linear-gradient(to bottom, #1A22F0, #cecece);
+  }
 
 
 
